@@ -15,6 +15,7 @@ import com.demoQA.utility.ExcelReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
+	public static ThreadLocal<WebDriver>tdriver=new ThreadLocal<WebDriver>();
 WebDriver driver;
 public WebDriver int_driver() {
 	WebDriverManager.chromedriver().setup();
@@ -23,4 +24,5 @@ public WebDriver int_driver() {
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	return driver;
 }
+
 }
