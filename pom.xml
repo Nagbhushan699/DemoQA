@@ -3,6 +3,11 @@
 	<groupId>Demo_QA_Framework12</groupId>
 	<artifactId>Demo_QA_Framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- Force Eclipse and Maven to use a Java 8 JDK compiler-->
+<properties>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  <maven.compiler.source>1.8</maven.compiler.source>
+</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -53,12 +58,6 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		 <dependency>
-                 <groupId>commons-lang</groupId>
-                 <artifactId>commons-lang</artifactId>
-                 <version>2.2</version>
-          </dependency>
-		
 	</dependencies>
 	<build>
 		<plugins>
