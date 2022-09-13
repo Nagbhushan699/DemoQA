@@ -4,11 +4,6 @@
 	<artifactId>Demo_QA_Framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<!-- Force Eclipse and Maven to use a Java 8 JDK compiler-->
-<properties>
-<!-- --><java.version>8</java.version>
-  <maven.compiler.target>1.8</maven.compiler.target>
-  <maven.compiler.source>1.8</maven.compiler.source>
-</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
