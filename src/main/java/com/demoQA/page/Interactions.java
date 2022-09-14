@@ -23,10 +23,10 @@ public Droppable goToDroppable() {
 	driver.findElement(droppable).click();
 	return new Droppable(driver);
 }
-public Selectable goToSelectable() {
-	driver.findElement(selectable).click();
-	return new Selectable(driver);
-}
+//public Selectable goToSelectable() {
+//	driver.findElement(selectable).click();
+//	return new Selectable(driver);
+//}
 public String checkTitle() {
 	return driver.findElement(title).getText();
 }
