@@ -1,7 +1,6 @@
 package com.demoQA.tests;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,7 +11,7 @@ import com.demoQA.page.ProgressBar;
 import com.demoQA.page.Widgets;
 
 public class ProgressBar_Test extends BaseClass {
-	static Logger log=LogManager.getLogger(ProgressBar_Test.class);
+	static Logger log=Logger.getLogger(ProgressBar_Test.class);
 	ProgressBar bar;
 	@BeforeClass
 	public void beforeclass() {

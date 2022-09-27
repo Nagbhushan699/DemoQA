@@ -1,10 +1,10 @@
 package com.demoQA.tests;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ import com.demoQA.page.Elements;
 import com.demoQA.page.RadioButtons;
 
 public class RadioButtons_Test extends BaseClass{
-	static Logger log=LogManager.getLogger(RadioButtons_Test.class);
+	static Logger log=Logger.getLogger(RadioButtons_Test.class);
 	RadioButtons radio;
 	@BeforeClass
 	public void before() {

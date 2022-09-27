@@ -1,6 +1,6 @@
 package com.demoQA.tests;
 
-import org.apache.logging.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,7 +11,7 @@ import com.demoQA.page.Alert_Frame_Window_Page;
 import com.demoQA.page.Frame;
 
 public class Frame_Test extends BaseClass {
-	static org.apache.logging.log4j.Logger log=LogManager.getLogger(Frame_Test.class);
+	static Logger log=Logger.getLogger(Frame_Test.class);
 	Frame frame;
 	@BeforeClass
 	public void beforeClass() {

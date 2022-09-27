@@ -1,9 +1,9 @@
 package com.demoQA.tests;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.BeforeClass;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.testng.AssertJUnit;
 import com.demoQA.Constants.Constants;
 import com.demoQA.basetest.BaseClass;
@@ -13,7 +13,7 @@ import com.demoQA.page.RadioButtons;
 import com.demoQA.page.TextBox;
 
 public class Element_Page_Test extends BaseClass{
-	static Logger log=LogManager.getLogger(Element_Page_Test.class);
+	static Logger log=Logger.getLogger(Element_Page_Test.class);
 	Elements element12;
 	@BeforeClass
 	public void before() {

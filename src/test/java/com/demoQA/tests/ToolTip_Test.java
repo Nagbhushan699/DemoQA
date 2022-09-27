@@ -8,10 +8,8 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.demoQA.Constants.Constants;
@@ -20,7 +18,7 @@ import com.demoQA.page.ToolTips;
 import com.demoQA.page.Widgets;
 
 public class ToolTip_Test extends BaseClass {
-	static Logger log=LogManager.getLogger(ToolTip_Test.class);
+	static Logger log=Logger.getLogger(ToolTip_Test.class);
 	ToolTips tip;
 	@BeforeClass
 	public void beforeclass() {

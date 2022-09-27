@@ -1,7 +1,9 @@
 package com.demoQA.tests;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test
+;
 import org.testng.annotations.BeforeClass;
+import org.apache.log4j.Logger;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -9,9 +11,6 @@ import org.testng.AssertJUnit;
 import java.io.File;
 
 import java.io.IOException;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -24,7 +23,7 @@ import com.demoQA.page.Elements;
 import com.demoQA.page.TextBox;
 import com.demoQA.utility.ExcelReader;
 public class TextBox_Test extends BaseClass{
-	static Logger log=LogManager.getLogger(TextBox_Test.class);
+	static Logger log=Logger.getLogger(TextBox_Test.class);
 	TextBox text;
 	@BeforeClass
 	public void before() {
