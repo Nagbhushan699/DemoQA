@@ -10,10 +10,10 @@ public class Alerts {
 	WebDriver driver;
 	//WebElements
 	By title=By.xpath("//div[text()='Alerts']");
-	String alertbtn="//button[@id='alertButton']";
-	String timerAlert="//button[@id='timerAlertButton']";
-	String confirmAlert="//button[@id='confirmButton']";
-	String promptAlert="//button[@id='promtButton']";
+	By alertbtn=By.xpath("//button[@id='alertButton']");
+	By timerAlert=By.xpath("//button[@id='timerAlertButton']");
+	By confirmAlert=By.xpath("//button[@id='confirmButton']");;
+	By promptAlert=By.xpath("//button[@id='promtButton']");
 	By confirmTextSuceesMsg=By.xpath("//span[@id='confirmResult']");
 	By promptTextSuceesMsg=By.xpath("//span[@id='promptResult']");
 	//driver initilizing
@@ -24,8 +24,31 @@ public class Alerts {
 	public String getTitle() {
 		return driver.findElement(title).getText();
 	}
-	public boolean IsAlertPresent(String alert) {
-		driver.findElement(By.xpath(alert)).click();
+	
+	public void clickAlertPopup()
+	{
+		driver.findElement(alertbtn).click();
+		
+	}
+	
+
+	public void clickTimerPopup()
+	{
+		driver.findElement(timerAlert).click();
+		
+	}
+	public void clickConfirmAlertPopup()
+	{
+		driver.findElement(confirmAlert).click();
+		
+	}
+	public void clickPromptAlertPopup()
+	{
+		driver.findElement(promptAlert).click();
+		
+	}
+	public boolean isAlertPresent() {
+		
 		try {
 			WebDriverWait wait=new WebDriverWait(driver,10);
 			wait.until(ExpectedConditions.alertIsPresent());
@@ -35,64 +58,46 @@ public class Alerts {
 			return false;
 		}
 	}
-	public String verifyAlertPopupMsg() {
-		String text = " ";
-		boolean flag=IsAlertPresent(alertbtn);
-		if(flag) {
+	public String getAlertPopupMsg() {
+		
+		
 			Alert alert=driver.switchTo().alert();
-			text=alert.getText();
+			String text=alert.getText();
 			alert.accept();
-		}
+		
 		return text;
 	}
-	public String verifyTimerAlertPopopMsg() {
-		String text = " ";
-		boolean flag=IsAlertPresent(timerAlert);
-		if(flag) {
+	public String getTimerAlertPopopMsg() {
+
 			driver.switchTo().alert();
 			Alert alert=driver.switchTo().alert();
-			text=alert.getText();
+			String text=alert.getText();
 			alert.accept();
-		}
 		return text;
 	}
-	public String verifyConfirmAlertPopopMsg() {
-		String text = " ";
-		boolean flag=IsAlertPresent(confirmAlert);
-		if(flag) {
+	public String getConfirmAlertPopopMsg() {
 			driver.switchTo().alert();
 			Alert alert=driver.switchTo().alert();
-			text=alert.getText();
-		}
+			String text=alert.getText();
 		return text;
 	}
-	public String verifyConfirmAlertSuccesfullMsg() {
-		boolean flag=IsAlertPresent(confirmAlert);
-		if(flag) {
+	public String getConfirmAlertSuccesfullMsg() {
+
 			Alert alert=driver.switchTo().alert();
 			alert.accept();
-		}
 		String msg=driver.findElement(confirmTextSuceesMsg).getText();
 		return msg;
 	}
-	public String verifyPromptAlertPopopMsg() {
-		String text = " ";
-		boolean flag=IsAlertPresent(promptAlert);
-		if(flag) {
-			driver.switchTo().alert();
+	public String getPromptAlertPopopMsg() {
 			Alert alert=driver.switchTo().alert();
-			text=alert.getText();
-		}
+			String text=alert.getText();
 		return text;
 	}
 
-	public String verifyPromptAlertInputText() {
-		boolean flag=IsAlertPresent(promptAlert);
-		if(flag) {
+	public String getPromptAlertInputText() {
 			Alert alert=driver.switchTo().alert();
 			alert.sendKeys("I am Nagbhushan");
 			alert.accept();
-		}
 		return driver.findElement(promptTextSuceesMsg).getText();
 	}
 }

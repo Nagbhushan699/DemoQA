@@ -7,8 +7,8 @@
         <methods>
           <include name="after"/>
           <include name="afterMethod"/>
-          <include name="testPromptAlertPopupMsg"/>
           <include name="beforetest"/>
+          <include name="testAlert"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.demoQA.tests.Alert_Test -->

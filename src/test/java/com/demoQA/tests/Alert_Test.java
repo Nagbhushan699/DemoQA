@@ -18,15 +18,19 @@ public class Alert_Test extends BaseClass{
 		Alert_Frame_Window_Page alert_frame=	home.goToAlert();
 		alert=alert_frame.goToAlerts();
 	}
-	@Test
+	@Test(priority = 1)
 	public void testAlert() {
-		String actual=alert.verifyAlertPopupMsg();
+		alert.clickAlertPopup();
+		boolean flag =alert.isAlertPresent();
+		Assert.assertEquals(flag, true);
+		String actual=alert.getAlertPopupMsg();
 		log.info("actual result : "+actual);
 		String expected=Constants.EXPECTEDALERTTEXT;
 		log.info("expected result : "+expected);
 		Assert.assertEquals(actual,expected);
 	}
-	@Test
+	
+	@Test()
 	public void testTitle() {
 		String actual=	alert.getTitle();
 		log.info("actual result : "+actual);
@@ -34,42 +38,51 @@ public class Alert_Test extends BaseClass{
 		log.info("expected result : "+expected);
 		Assert.assertEquals(actual, expected);
 	}
-	@Test
+	@Test(priority = 2)
 	public void testTimerAlert() {
-		String actual=alert.verifyTimerAlertPopopMsg();
+		alert.clickTimerPopup();
+		boolean flag =alert.isAlertPresent();
+		Assert.assertEquals(flag, true);
+		String actual=alert.getTimerAlertPopopMsg();
 		log.info("actual result : "+actual);
 		String expected=Constants.EXPECTEDTIMERALERTTEXT;
 		log.info("expected result : "+expected);
-		Assert.assertEquals(actual, expected);
+		Assert.assertEquals(actual,expected);
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void testConfirmAlertPopupMsg() {
-		String actual=alert.verifyConfirmAlertPopopMsg();
+		alert.clickConfirmAlertPopup();
+		boolean flag =alert.isAlertPresent();
+		Assert.assertEquals(flag, true);
+		String actual=alert.getConfirmAlertPopopMsg();
 		log.info("actual result : "+actual);
 		String expected=Constants.EXPECTEDCONFIRMALERTPOPUPTEXT;
 		log.info("expected result : "+expected);
 		Assert.assertEquals(actual, expected);
 	}
-	@Test
+	@Test(priority = 4)
 	public void testConfirmAlertSuccesfullMsg() {
-		String actual=alert.verifyConfirmAlertSuccesfullMsg();
+		String actual=alert.getConfirmAlertSuccesfullMsg();
 		log.info("actual result : "+actual);
 		String expected=Constants.CONFIRMALERTMSG;
 		log.info("expected result : "+expected);
 		Assert.assertEquals(actual, expected);
 	}
-	@Test
+	@Test(priority = 5)
 	public void testPromptAlertPopupMsg() {
-		String actual=alert.verifyPromptAlertPopopMsg();
+		alert.clickPromptAlertPopup();
+		boolean flag=alert.isAlertPresent();
+		Assert.assertEquals(flag, true);
+		String actual=alert.getPromptAlertPopopMsg();
 		log.info("actual result : "+actual);
 		String expected=Constants.EXPECTEDPROMPTALERTPOPUPTEXT;
 		log.info("expected result : "+expected);
 		Assert.assertEquals(actual, expected);
 	}
-	@Test
-	public void testPromptAlert() {
-		String actual=alert.verifyPromptAlertInputText();
+	@Test(priority = 6)
+	public void testPromptAlertInputText() {
+		String actual=alert.getPromptAlertInputText();
 		log.info("actual result : "+actual);
 		String expected=Constants.PROMPTALERTTEXT;
 		log.info("expected result : "+expected);
