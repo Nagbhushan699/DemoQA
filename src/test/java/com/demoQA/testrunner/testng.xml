@@ -3,7 +3,6 @@
 <suite name="Suite">
 <listeners>
 <listener class-name="com.demoQA.listeners.ExtentReportListener"></listener>
-<listener class-name="com.demoQA.listeners.Listeners"></listener>
 </listeners>
 	<test thread-count="5" name="Test1">
 		<classes>	

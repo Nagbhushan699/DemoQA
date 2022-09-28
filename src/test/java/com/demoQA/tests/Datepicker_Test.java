@@ -1,10 +1,10 @@
 package com.demoQA.tests;
 
 import java.io.File;
+
 import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -17,7 +17,7 @@ import com.demoQA.page.Widgets;
 import com.demoQA.utility.ExcelReader;
 
 public class Datepicker_Test extends BaseClass{
-	static Logger log=LogManager.getLogger(Datepicker_Test.class);
+	static Logger log=Logger.getLogger(Datepicker_Test.class);
 	Datepicker date;
 	@BeforeClass
 	public void beforeclass() {

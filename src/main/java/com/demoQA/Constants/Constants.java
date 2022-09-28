@@ -44,5 +44,10 @@ public static final String INTERACTIONSTITLE="Interactions";
 public static final String DROPPABLETITLE="Droppable";
 public static final String EXPECTEDROPTEXT="Dropped!";
 public static final String EXPECTEDNOTACCEPTABLEROPTEXT="Drop here";
+public static final String EXPECTEDALERTTEXT="You clicked a button";
+public static final String EXPECTEDTIMERALERTTEXT="This alert appeared after 5 seconds";
+public static final String EXPECTEDCONFIRMALERTPOPUPTEXT="Do you confirm action?";
+public static final String EXPECTEDPROMPTALERTPOPUPTEXT="Please enter your name";
+
 }
 

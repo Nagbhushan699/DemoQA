@@ -1,7 +1,6 @@
 package com.demoQA.tests;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 
 import org.testng.annotations.BeforeClass;
@@ -12,7 +11,7 @@ import com.demoQA.page.Droppable;
 import com.demoQA.page.Interactions;
 
 public class Test_Interactions extends BaseClass{
-	static Logger log=LogManager.getLogger(Test_Interactions.class);
+	static Logger log=Logger.getLogger(Test_Interactions.class);
 	Interactions act;
 @BeforeClass
 public void beforeclass() {

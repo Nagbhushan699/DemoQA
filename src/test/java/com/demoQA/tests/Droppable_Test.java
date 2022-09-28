@@ -1,7 +1,6 @@
 package com.demoQA.tests;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -13,7 +12,7 @@ import com.demoQA.page.Droppable;
 import com.demoQA.page.Interactions;
 
 public class Droppable_Test extends BaseClass{
-	static Logger log=LogManager.getLogger(Droppable_Test.class);
+	static Logger log=Logger.getLogger(Droppable_Test.class);
 	Droppable drop;
 	@BeforeClass
 	public void beforeclass() {

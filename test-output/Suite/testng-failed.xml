@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+=======
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
   <listeners>
     <listener class-name="com.demoQA.listeners.ExtentReportListener"/>
-    <listener class-name="com.demoQA.listeners.Listeners"/>
   </listeners>
+<<<<<<< HEAD
   <test thread-count="5" name="Test2(failed)">
+=======
+  <test thread-count="5" verbose="0" name="Test2(failed)">
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
     <classes>
       <class name="com.demoQA.tests.TextBox_Test">
         <methods>
@@ -20,7 +27,11 @@
       </class> <!-- com.demoQA.tests.TextBox_Test -->
     </classes>
   </test> <!-- Test2(failed) -->
+<<<<<<< HEAD
   <test thread-count="5" name="Test4(failed)">
+=======
+  <test thread-count="5" verbose="0" name="Test4(failed)">
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
     <classes>
       <class name="com.demoQA.tests.Test_Interactions">
         <methods>
@@ -33,6 +44,7 @@
       </class> <!-- com.demoQA.tests.Test_Interactions -->
     </classes>
   </test> <!-- Test4(failed) -->
+<<<<<<< HEAD
   <test thread-count="5" name="Test6(failed)">
     <classes>
       <class name="com.demoQA.tests.Alert_Test">
@@ -41,6 +53,16 @@
           <include name="after"/>
           <include name="testConfirmAlert"/>
           <include name="afterMethod"/>
+=======
+  <test thread-count="5" verbose="0" name="Test11(failed)">
+    <classes>
+      <class name="com.demoQA.tests.Alert_Frame_Window_Page_Test">
+        <methods>
+          <include name="beforeclass"/>
+          <include name="after"/>
+          <include name="afterMethod"/>
+          <include name="testNestedIFrameTitle"/>
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
           <include name="beforetest"/>
           <include name="testTimerAlert"/>
           <include name="testPromptAlert"/>
@@ -48,14 +70,22 @@
         </methods>
       </class> <!-- com.demoQA.tests.Alert_Test -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- Test6(failed) -->
   <test thread-count="5" name="Test12(failed)">
+=======
+  </test> <!-- Test11(failed) -->
+  <test thread-count="5" verbose="0" name="Test12(failed)">
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
     <classes>
       <class name="com.demoQA.tests.Browsers_Windows_Test">
         <methods>
           <include name="beforeClass"/>
           <include name="verifyNewWindow"/>
+<<<<<<< HEAD
           <include name="verifyNewTab"/>
+=======
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
           <include name="after"/>
           <include name="afterMethod"/>
           <include name="beforetest"/>
@@ -63,7 +93,11 @@
       </class> <!-- com.demoQA.tests.Browsers_Windows_Test -->
     </classes>
   </test> <!-- Test12(failed) -->
+<<<<<<< HEAD
   <test thread-count="5" name="Test13(failed)">
+=======
+  <test thread-count="5" verbose="0" name="Test13(failed)">
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
     <classes>
       <class name="com.demoQA.tests.CheckBox_Test">
         <methods>
@@ -76,13 +110,21 @@
       </class> <!-- com.demoQA.tests.CheckBox_Test -->
     </classes>
   </test> <!-- Test13(failed) -->
+<<<<<<< HEAD
   <test thread-count="5" name="Test14(failed)">
+=======
+  <test thread-count="5" verbose="0" name="Test14(failed)">
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
     <classes>
       <class name="com.demoQA.tests.Datepicker_Test">
         <methods>
           <include name="verifyDate"/>
           <include name="verifyDateByPrevNextBtn" invocation-numbers="0 1 2"/>
           <include name="after"/>
+<<<<<<< HEAD
+=======
+          <include name="verifyTitle"/>
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
           <include name="beforeclass"/>
           <include name="afterMethod"/>
           <include name="beforetest"/>

@@ -78,16 +78,20 @@
   </test> <!-- Test13(failed) -->
   <test thread-count="5" name="Test14(failed)">
     <classes>
-      <class name="com.demoQA.tests.Datepicker_Test">
+      <class name="com.demoQA.tests.Alert_Test">
         <methods>
+<<<<<<< HEAD
           <include name="verifyDate"/>
           <include name="verifyDateByPrevNextBtn" invocation-numbers="0 1 2"/>
+=======
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
           <include name="after"/>
-          <include name="beforeclass"/>
           <include name="afterMethod"/>
+          <include name="testPromptAlertPopupMsg"/>
           <include name="beforetest"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.demoQA.tests.Datepicker_Test -->
+      </class> <!-- com.demoQA.tests.Alert_Test -->
     </classes>
   </test> <!-- Test14(failed) -->
 </suite> <!-- Failed suite [Suite] -->

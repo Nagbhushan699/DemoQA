@@ -15,8 +15,13 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
+<<<<<<< HEAD
 			<version>7.6.0</version>
 			<scope>compile</scope>
+=======
+			<version>7.0.0</version>
+
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -49,6 +54,7 @@
 			<artifactId>extentreports</artifactId>
 			<version>2.41.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -60,7 +66,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
+				<version>3.8.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -69,11 +75,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M7</version>
+				<version>2.19.1</version>
 				<configuration>
-				<reportsDirectory>C:\Users\bhalerao\Desktop\TDIT CORE jJava\Demo_QA_Framework\test-output</reportsDirectory>
+					<reportsDirectory>/test-output/</reportsDirectory>
 					<suiteXmlFiles>
-						<suiteXmlFile>C:\Users\bhalerao\Desktop\TDIT CORE jJava\Demo_QA_Framework\src\test\java\com\demoQA\testrunner\testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/java/com/demoQA/testrunner/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

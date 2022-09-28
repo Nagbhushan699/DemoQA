@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoQA.tests.Datepicker_Test">
+      <class name="com.demoQA.tests.Alert_Test">
         <methods>
-          <include name="verifyDateByPrevNextBtn" invocation-numbers="0 1 2"/>
           <include name="after"/>
-          <include name="beforeclass"/>
           <include name="afterMethod"/>
+          <include name="testPromptAlertPopupMsg"/>
           <include name="beforetest"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.demoQA.tests.Datepicker_Test -->
+      </class> <!-- com.demoQA.tests.Alert_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

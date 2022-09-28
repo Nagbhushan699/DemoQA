@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="15" ignored="0" total="49" passed="34">
   <reporter-output>
   </reporter-output>
@@ -1484,12 +1485,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=verifyDateByPrevNextBtn status=FAILURE method=Datepicker_Test.verifyDateByPrevNextBtn(int, int, int)[pri:0, instance:com.demoQA.tests.Datepicker_Test@2f8f5f62] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11333" started-at="2022-09-28T00:40:02 IST" finished-at="2022-09-28T00:40:13 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11333" started-at="2022-09-28T00:40:02 IST" finished-at="2022-09-28T00:40:13 IST">
+      <class name="com.demoQA.tests.Alert_Test">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:com.demoQA.tests.Alert_Test@4d50efb8]" name="beforetest" is-config="true" duration-ms="9715" started-at="2022-09-28T00:40:02 IST" finished-at="2022-09-28T00:40:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.demoQA.tests.Alert_Test@4d50efb8]" name="beforeClass" is-config="true" duration-ms="347" started-at="2022-09-28T00:40:12 IST" finished-at="2022-09-28T00:40:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testPromptAlert()[pri:0, instance:com.demoQA.tests.Alert_Test@4d50efb8]" name="testPromptAlert" duration-ms="520" started-at="2022-09-28T00:40:12 IST" finished-at="2022-09-28T00:40:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromptAlert -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.demoQA.tests.Alert_Test@4d50efb8]" name="afterMethod" is-config="true" duration-ms="4" started-at="2022-09-28T00:40:13 IST" finished-at="2022-09-28T00:40:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPromptAlert status=SUCCESS method=Alert_Test.testPromptAlert()[pri:0, instance:com.demoQA.tests.Alert_Test@4d50efb8] output={null}]]]>
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="verifyDateByPrevNextBtn(int, int, int)[pri:0, instance:com.demoQA.tests.Datepicker_Test@2f8f5f62]" name="verifyDateByPrevNextBtn" duration-ms="1083" started-at="2022-09-13T00:24:21 IST" data-provider="dp2" finished-at="2022-09-13T00:24:22 IST">
           <params>
             <param index="0">
@@ -1784,4 +1813,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.demoQA.tests.ProgressBar_Test -->
     </test> <!-- Test16 -->
   </suite> <!-- Suite -->
+=======
+        <test-method status="PASS" signature="after()[pri:0, instance:com.demoQA.tests.Alert_Test@4d50efb8]" name="after" is-config="true" duration-ms="672" started-at="2022-09-28T00:40:13 IST" finished-at="2022-09-28T00:40:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.demoQA.tests.Alert_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> 6364e11fe48bb0a3f1a8a329bea4d2c995220102
 </testng-results>
